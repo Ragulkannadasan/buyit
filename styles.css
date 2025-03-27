@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1, h2 {
+    margin: 20px 0;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.product-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-item h3 {
+    margin: 10px 0;
+}
+
+.product-item p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+button {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #218838;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/*.menu-container {
+    background-color: #444;
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 10px auto;
+    text-align: center;
+}*/
+
+.menu-container nav {
+    display: inline-block;
+}
+
+.menu-bar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.menu-bar li {
+    position: relative;
+}
+
+.menu-bar a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    background-color: #555;
+}
+
+.menu-bar a:hover {
+    background-color: #666;
+}
+
+.menu-bar .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.menu-bar li:hover .dropdown {
+    display: block;
+}
+
+.menu-bar .dropdown li {
+    padding: 5px 20px;
+}
+
+.menu-bar .dropdown li a {
+    color: #ddd;
+    background-color: transparent;
+}
+
+.menu-bar .dropdown li a:hover {
+    color: #fff;
+    background-color: #555;
+}
